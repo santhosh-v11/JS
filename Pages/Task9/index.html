@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Cart</title>
+</head>
+<body class="bg-black">
+  <main class="grid place-content-center w-screen h-screen text-white">
+    <div class="w-64 rounded-2xl border border-gray-400 p-4 shadow-white shadow-md flex justify-center items-center flex-col">
+      <div class="w-52 ">
+      <img src="../../src/assests/imac-front-dark.svg" alt="" class="pb-2">
+      </div>
+       <div class="border-t">
+        <p class="font-semibold">iMac 27”</p>
+        <p class="font-light">This generation has some improvements, including a longer continuous battery life.</p>
+        <p class="font-semibold mb-1">Quantity</p>
+        <div>
+          <button type="button" class="bg-gray-400 px-2 p-1 rounded-full " id="inc"><i class="fa-solid fa-plus"></i></button>
+        <input type="number" name="qun" id="qun" max="9" min="1" class="border">
+        <button type="button" class="bg-gray-400 px-2 p-1 rounded-full" id="dec"><i class="fa-solid fa-minus"></i></button>
+        </div>
+      </div>
+        <button class="bg-blue-500 font-serif text-white px-3 py-1 mt-2 rounded-2xl">Add to Cart  <i class="fa-solid fa-cart-shopping"></i></button>
+      
+    </div>
+  </main>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

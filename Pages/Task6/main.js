@@ -43,8 +43,7 @@ function toSentenceCase(text) {
 }
 
 function toTitleCase(text) {
-  return text
-    .toLowerCase().split(" ").map(word => word ? word[0].toUpperCase() + word.slice(1) : "").join(" ");
+  return text.toLowerCase().split(" ").map(word => word ? word[0].toUpperCase() + word.slice(1) : "").join(" ");
 }
 
 sentencecase.addEventListener("change", () => {
@@ -60,4 +59,28 @@ titlecase.addEventListener("change", () => {
     textareaEl.value = toTitleCase(textareaEl.value);
   }
 });
+
+//task10 countch
+
+const chEl = document.getElementById("ch");
+const wordEl = document.getElementById("word");
+
+
+// 🔹 Update character & word count
+function updateCount(text) {
+  // Characters (including spaces)
+  chEl.textContent = text.length;
+
+  // Words (ignore extra spaces)
+  const trimmedText = text.trim();
+  wordEl.textContent =
+    trimmedText === "" ? 0 : trimmedText.split(/\s+/).length;
+}
+
+// 🔹 Live typing
+textareaEl.addEventListener("input", (e) => {
+  updateCount(e.target.value);
+});
+
+
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quotes Manager</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+  <div class="bg-white w-full max-w-2xl rounded-xl shadow-lg p-6">
+    <h2 class="text-2xl font-bold text-center mb-4">📜 Quotes Manager</h2>
+
+    <!-- Input -->
+    <div class="flex gap-2 mb-4">
+      <input
+        id="quoteInput"
+        type="text"
+        placeholder="Enter a quote..."
+        class="flex-1 border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+      <button
+        id="addQuoteBtn"
+        class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+      >
+        Add
+      </button>
+    </div>
+
+    <!-- All Quotes -->
+    <h3 class="text-lg font-semibold mb-2">All Quotes</h3>
+    <div id="quotesList" class="space-y-2"></div>
+
+    <!-- Favorites -->
+    <h3 class="text-lg font-semibold mt-6 mb-2">❤️ Favorite Quotes</h3>
+    <div id="favList" class="space-y-2"></div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>

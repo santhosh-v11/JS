@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+.active{
+    font-weight: bold;
+    text-decoration: underline;
+    color: aliceblue;
+}

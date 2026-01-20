@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+
+    <title>Task 2</title>
+
+</head>
+<body class="flex justify-center h-screen items-center flex-col ">
+    <div class="p-5 m-5 w-2xl text-center  rounded-2xl  backdrop-blur-2xl shadow-purple-300 shadow-2xl bg-linear-to-tl from-purple-800 to-purple-400" >
+        <h1 class="text-2xl text-white font-semibold text-center">Dynamic user manager</h1>
+        <form id="form" class="grid grid-cols-2 gap-2 text-white w-10/12 m-5">
+            <label for="name" class=" text-2xl text-end pr-5 ">Name:</label>
+            <input id="name" placeholder="Enter Name" class=" text-xl font-light focus:outline-gray-200 px-2 ">
+            <label class="  text-2xl ">Choose Desgination:</label>
+            <select  name="roles" id="job" class="active:outline-0  bg-transparent" >
+                <option value="Frontend Developer" class="bg-purple-300 text-black ">Frontend Developer</option>
+                <option value="Backend Developer" class="bg-purple-300 text-black">Backend Developer</option>
+                <option value="Fullstack Developer" class="bg-purple-300 text-black">Fullstack Developer</option>
+                <option value="Devops" class="bg-purple-300 text-black"> Devops</option>
+            </select>
+            <button type="submit" id="submit" class=" mt-5 text-center col-span-2  mx-auto text-purple-800 font-semibold rounded-full px-3   bg-white " >Add User</button>
+        </form>        
+    </div>
+    <div id="userlist" class="bg-purple-500  text-white mt-10 rounded-2xl">
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Text Formatter</title>
+</head>
+
+<body>
+    <main class="grid place-content-center h-screen w-screen bg-amber-200 ">
+        <h1 class="font-serif text-center pb-4 text-3xl">Text Formatting</h1>
+        <div class="flex justify-center  w-screen p-40 gap-2 ">
+            <div class="flex-1 p-5 border-2 border-amber-100 rounded-2xl ">
+                <label for="text" class=" text-lg font-serif p-1"><i class="fa-solid fa-pen-to-square"></i> Enter Your text </label>
+                <textarea name="text" id="text" class="w-full h-fit resize-y p-2  bg-gray-200 rounded-lg" rows="8">  </textarea>
+                <button type="button" class=" left-149 top-2  bg-gray-300  rounded-sm px-2 text-black font-semibold" id="clrbtn">Clear Text</button>
+            </div>
+            <div class="flex-1 p-5 bg-amber-100/50 rounded-2xl">
+            <h2 class="pb-2 ">Choose Format Option</h2>
+            <div class="grid grid-cols-1 gap- place-content-center ">
+                <div class="flex items-center space-x-2">
+                    <input type="checkbox" class="accent-green-600 " name="uppercase" id="uppercase">
+                    <label for="uppercase" class=" font-semibold">UPPERCASE</label>
+                </div>
+                <div class="flex  items-center space-x-2">
+                    <input type="checkbox" class="accent-green-600" name="lowercase" id="lowercase">
+                    <label for="lowercase" class="font-semibold">lowercase</label>
+                </div>
+                <div class="flex  items-center space-x-2">
+                    <input type="checkbox" class="accent-green-600" name="sentencecase" id="sentencecase">
+                    <label for="sentencecase" class="font-semibold">Sentencecase</label>
+                </div>
+                <div class="flex  items-center space-x-2">
+                    <input type="checkbox" class="accent-green-600" name="titlecase" id="titlecase">
+                    <label for="titlecase" class="font-semibold">Title Case</label>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+    </main>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

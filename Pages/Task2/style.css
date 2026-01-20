@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.task2bg{
+    background-color: aquamarine;
+    height: 100vh;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="max-w-xl mx-auto mt-10 space-y-4">
+        <h1 class="text-2xl font-serif ">Frequently asked Interview Questions</h1>
+        <div class="border rounded-lg">
+            <button class="accordion-btn w-full flex justify-between items-center p-4 font-semibold text-left">
+                <span>What is VirtualDOM</span>
+                <span class="icon transition-transform duration-300"><i class="fa-solid fa-angle-down"></i></span>
+            </button>
+
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+                <p class="p-4 text-gray-600">
+                    VirtualDOM is a Lighweight copy of real DOM. It's a feature react.js for it's performance. It use when any state change the Vdom and real DOM compare then update only the changed node using diffucing meethod. 
+                </p>
+            </div>
+        </div>
+        <div class="border rounded-lg">
+            <button class="accordion-btn w-full flex justify-between items-center p-4 font-semibold text-left">
+                <span>Explain about your Project</span>
+                <span class="icon transition-transform duration-300"><i class="fa-solid fa-angle-down"></i></span>
+            </button>
+
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+                <p class="p-4 text-gray-600">Built a Gemini AI Clone using React, Vite, andCSS. Integrated OpenAI API for intelligent chatbot responses and implemented typing effects with Markdown rendering. Utilized useContext for efficient global state sharing, ensuring seamless user interaction with fade animation and responsive, modern conversational UI design. </p>
+            </div>
+        </div>
+        <div class="border rounded-lg">
+            <button class="accordion-btn w-full flex justify-between items-center p-4 font-semibold text-left">
+                <span>What is DOM</span>
+                <span class="icon transition-transform duration-300"><i class="fa-solid fa-angle-down"></i></span>
+            </button>
+
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+                <p class="p-4 text-gray-600">DOM is Document Object Model is a tree like representation of a web page that lets JavaScript interact and manipulate HTML and CSS elements dynamically.</p>
+            </div>
+        </div>
+        <div class="border rounded-lg">
+            <button class="accordion-btn w-full flex justify-between items-center p-4 font-semibold text-left">
+                <span>How do you style ur HTML?</span>
+                <span class="icon transition-transform duration-300"><i class="fa-solid fa-angle-down"></i></span>
+            </button>
+
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+                <p class="p-4 text-gray-600">We can style the html structure in 3ways using css.use of Inline css or internal css or External CSS </p>
+            </div>
+        </div>
+        <div class="border rounded-lg">
+            <button class="accordion-btn w-full flex justify-between items-center p-4 font-semibold text-left">
+                <span>What's the difference between == and ===</span>
+                <span class="icon transition-transform duration-300"><i class="fa-solid fa-angle-down"></i></span>
+            </button>
+
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+                <p class="p-4 text-gray-600">== checks only the values are same and === strictly checks the value and it's datatype </p>
+            </div>
+        </div>
+
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

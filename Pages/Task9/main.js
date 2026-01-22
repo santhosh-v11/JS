@@ -1,39 +1,63 @@
-// 🔹 DOM Elements
-const incBtnEl = document.getElementById("inc");
-const decBtnEl = document.getElementById("dec");
-const quantityInputEl = document.getElementById("qun");
 
-// 🔹 State
-let quantity = Number(quantityInputEl.value);
-
-// 🔹 Update Input UI
-function updateQuantityUI() {
-  quantityInputEl.value = quantity;
+function toggleTheme() {
+  if (document.documentElement.classList.contains('dark')) {
+    document.documentElement.classList.remove('dark');
+    localStorage.theme = 'light';
+  } else {
+    document.documentElement.classList.add('dark');
+    localStorage.theme = 'dark';
+  }
 }
 
-// ➕ Increment
-incBtnEl.addEventListener("click", () => {
-  if (quantity < 9) {
-    quantity++;
-    updateQuantityUI();
-  }
-});
+const incBtnEl = document.getElementById("inc");
+const decBtnEl = document.getElementById("dec");
+const inputEl = document.getElementById("qun");
+const cartEL = document.getElementById("cart");
+const msgEl = document.getElementById("msg")
+let num = 1;
+const maxnum = 9;
 
-// ➖ Decrement
-decBtnEl.addEventListener("click", () => {
-  if (quantity > 1) {
-    quantity--;
-    updateQuantityUI();
-  }
-});
+cartEL.addEventListener('click',()=>{
+    msgEl.innerText=`your product ${num} quantity added to the card`;
+    msgEl.classList.remove("hidden");
 
-// ✍️ Manual Input Safety
-quantityInputEl.addEventListener("input", () => {
-  let value = Number(quantityInputEl.value);
+    setTimeout(()=>{
+        msgEl.classList.add("hidden")
+    },1500)
 
-  if (value < 1) value = 1;
-  if (value > 9) value = 9;
+})
+// inputEl.addEventListener('')
+function uiupdate(){
+    if(num==1){
+        decBtnEl.disabled = true;
+    }
+    else{
+        decBtnEl.disabled = false;
+    }
 
-  quantity = value;
-  updateQuantityUI();
-});
+}
+uiupdate();
+incBtnEl.addEventListener('click',()=>{
+    if(num < maxnum){
+        num++
+        inputEl.value = num;
+        // console.log(num);
+        
+    }
+    else{
+        alert("upto 9 quantity only able to purchase at a time")
+    } 
+    uiupdate();
+})
+decBtnEl.addEventListener('click',()=>{
+    if(num >1){
+        num--;
+        inputEl.value = num;
+    }
+    else{
+        alert(" can't place zero order")
+        uiupdate()
+    }
+   
+
+})

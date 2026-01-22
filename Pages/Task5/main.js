@@ -1,4 +1,4 @@
-let bodyEl = document.getElementsByTagName("body")[0];
+let bodyEl = document.body;
 const randomEl = document.getElementById("random");
 function hex(){
   let color = "#";
@@ -21,7 +21,7 @@ function clearBgClasses() {
     "bg-green-500",
     "bg-blue-500",
     "bg-violet-500",
-    "bg-pink-300"
+    "bg-pink-300","bg-white"
   );
 }
 

@@ -8,12 +8,17 @@
     <title>Password hide/show</title>
 </head>
 <body class="grid  place-content-center h-screen">
-     <div class="bg-amber-100 p-5">
+        
+     <div class="bg-amber-100 p-5 flex flex-col  rounded-2xl">
+        <h1 class="text-center font-semibold text-orange-700 pb-4 text-2xl">Signing In</h1>
+        <label for="email" class="p-1 px-2">Enter email</label>
+        <input type="email" name="" id="" class="border" >
         <label for="pass" class="p-1">Enter Password </label>
         <div class="border p-1 px-2">
             <input id="pass" placeholder="Your password" type="password" minlength="8"/>
             <span class="eye-icon" id="eye-icon"> <i class="fa-solid fa-eye"></i> </span>
         </div>
+        <button type="submit" class="px-2 p-1 rounded-2xl bg-orange-300 my-5 ">Sign in</button>
     </div>
     <script type="module" src="./main.js"></script>
 </body>

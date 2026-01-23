@@ -1,16 +1,2 @@
 @import "TailwindCSS";
 
-
-@import "tailwindcss";
-
-/* 1️⃣ Define theme variables */
-@theme {
-  --color-bg: white;
-  --color-text: #020617;
-}
-
-/* 2️⃣ Define dark variant separately */
-@variant dark (&:where(.dark, .dark *)) {
-  --color-bg: #020617;
-  --color-text: #f8fafc;
-}

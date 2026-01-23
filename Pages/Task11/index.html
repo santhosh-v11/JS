@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quotes</title>
+</head>
+<body class="bg-black min-h-screen flex  flex-col">
+    <header class="text-2xl text-white font-sans font-semibold p-10">Quote of the Day !</header>
+
+    <main class="flex flex-col items-center justify-center space-y-20 grow ">
+        <div class=" px-4 h-66 pb-10 w-1/2 flex flex-col justify-center  bg-white/10 backdrop-blur-sm text-white border border-white/10 shadow-lg rounded-2xl ">
+            <h1 class="text-2xl  py-10 pb-3 px-10 italic font-serif " id="qt" ><i class="fa-solid fa-quote-left "></i>Anyone who has never made a mistake has never tried anything new<i class="fa-solid fa-quote-right "></i></h1>
+            <span class="px-10  text-white before:content-['~']" id="author"> Albert Einstein</span>
+        </div>
+
+        <button type="button" class="bg-white/10 backdrop-blur-sm hover:scale-105 transition duration-200 text-white border border-white/10 shadow-lg rounded-full p-5 font-semibold" id="btn">Generate Next</button>
+    </main>
+
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

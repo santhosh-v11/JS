@@ -10,10 +10,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        index: resolve(__dirname, "Pages/Task1/index.html"),
-        index: resolve(__dirname, "Pages/Task2/index.html"),
-        index: resolve(__dirname, "Pages/Task3/index.html"),
-        index: resolve(__dirname, "Pages/Task4/index.html"),
+        Task1: resolve(__dirname, "Pages/Task1/index.html"),
+        Task2: resolve(__dirname, "Pages/Task2/index.html"),
+        Task3: resolve(__dirname, "Pages/Task3/index.html"),
+        Task4: resolve(__dirname, "Pages/Task4/index.html"),
       },
     },
   },

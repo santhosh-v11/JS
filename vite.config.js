@@ -22,7 +22,7 @@ export default defineConfig({
         Task10: resolve(__dirname, "Pages/Task10/index.html"),
         Task11: resolve(__dirname, "Pages/Task11/index.html"),
         Task12: resolve(__dirname, "Pages/Task12/index.html"),
-        Task13: resolve(__dirname, "Pages/Task13/index.html"),
+        // Task13: resolve(__dirname, "Pages/Task13/index.html"),
       },
     },
   },

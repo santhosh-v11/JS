@@ -4,7 +4,7 @@ A collection of small JavaScript projects I built while learning DOM manipulatio
 These are learning exercises, not production apps. The goal was to get comfortable with core JavaScript patterns before jumping into frameworks.
 
 ## Live Demo
-    [Live](https://santhoshv-js.vercel.app/)
+[Live](https://santhoshv-js.vercel.app/)
 
 ## What's inside
 
